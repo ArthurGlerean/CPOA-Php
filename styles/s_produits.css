@@ -1,0 +1,230 @@
+header{
+    
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    padding:40px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.en-tete-produits{
+    text-align: center;
+}
+
+.gourmettes{
+    text-align:right;
+}
+.gourmettes-content{
+    display:flex;
+    flex-wrap: wrap;
+    color:black;
+    text-align:center;
+}
+.chaines{
+    text-align:left;
+}
+.chaines-content{
+    display:flex;
+    flex-wrap: wrap;
+    color:black;
+    text-align:center;
+}
+.montres{
+    text-align:right;
+}
+.montres-content{
+    display:flex;
+    flex-wrap: wrap;
+    color:black;
+    text-align:center;
+}
+.bagues{
+    text-align:left;
+}
+.bagues-content{
+    display:flex;
+    flex-wrap: wrap;
+    color:black;
+    text-align:center;
+}
+/** FILTER BAR **/
+.barre-filtres{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+}
+.selectdiv {
+    position: relative;
+    /*Don't really need this just for demo styling*/
+    
+    float: left;
+    min-width: 200px;
+  }
+  
+  /* IE11 hide native button (thanks Matt!) */
+  select::-ms-expand {
+  display: none;
+  }
+  
+  .selectdiv:after {
+    content: '<>';
+    font: 17px "Consolas", monospace;
+    color: #333;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 11px;
+    /*Adjust for position however you want*/
+    
+    top: 18px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #999;
+    /*left line */
+    
+    position: absolute;
+    pointer-events: none;
+  }
+  
+  .selectdiv select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Add some styling */
+    
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 50px;
+    float: right;
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #333;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    -ms-word-break: normal;
+    word-break: normal;
+  }
+.button{
+    background-color: #333;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    color:white;
+    font-size:14px;
+    width:156px;
+}
+.button:hover{
+    background-color: #00E676;
+    box-shadow:currentColor;
+    color:black;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    transform: translateY(-7px);
+}
+
+/**    CARD    **/
+.container-fluid{
+    width:450px;
+    z-index:1;
+}
+
+.details {
+    border: 1.5px solid grey;
+    color: #212121;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px #212121;
+}
+
+.cart {
+    background-color: #212121;
+    color: white;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 900;
+    width: 100%;
+    height: 39px;
+    padding-top: 9px;
+    box-shadow: 0px 5px 10px  #212121;
+}
+
+.card {
+    width: 225px;
+}
+
+.card-body {
+    width: fit-content;
+}
+
+.btn {
+    border-radius: 0;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #00E676;
+    box-shadow:currentColor;
+    color:black;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    transform: translateY(-7px);
+}
+.link_buttons{
+
+}
+.img-thumbnail {
+    border: none;
+}
+
+.card {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+h5{
+    color:black;
+    font-size: 15px;
+}
+p{
+    color: black;
+}
+/**  -------------------------------------------------**/
+h1{
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size:80px;
+}
+h2{
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size:40px;
+}
+
+/** SCROLLBAR **/
+
+::-webkit-scrollbar-track
+{
+	border: 5px solid white;
+	border-color: transparent;
+	background-color: #b2bec3;
+}
+
+::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: #dfe6e9;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #dde1e5;
+	border-radius: 10px;
+}

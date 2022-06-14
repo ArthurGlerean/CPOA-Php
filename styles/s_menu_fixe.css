@@ -83,13 +83,7 @@ a img{
 
 /* Home section */
 
-.home {
-    width: 100%;
-    height: 100vh;
-    background-image: url("../images/cpoa-header-background.jpg");
-    background-position: center top;
-	background-size:cover;
-}
+
 
 .navTrigger {
     display: none;

@@ -1,7 +1,7 @@
 <head>
-    <link href="./styles/s_menu.css" rel="stylesheet">
+    <link href="./styles/s_menu_fixe.css" rel="stylesheet">
 </head>
-    <nav class="nav">
+    <nav class="nav affix">
         <div class="container">
             <div class="logo">
                 <a href="?index.php&target=home"><p class="title">easyJewel</p></a>
@@ -25,24 +25,10 @@
         </div>
     </nav>
     
-    <section class="home">
-    </section>
-    <!-- <div style="height: 1000px">
-			
-    </div> -->
-
+    
+	
 <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="./app.js"></script>
 
-<!-- Function used to shrink nav bar removing paddings and adding black background -->
-    <script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-    </script>
+

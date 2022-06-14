@@ -1,0 +1,103 @@
+body{
+    display:flex;
+    flex-direction: column;
+    font-family:"Quicksand", sans-serif;
+}
+
+header{
+    height:65px;
+}
+
+main{
+    margin:100px;
+    align-self: center;
+}
+/**-----------------------------------------------------**/
+.en-tete-profil{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.photo_profil{
+    width:200px;
+    height:200px;
+    margin-right:50px;
+}
+
+.title-profil{
+    font-size: 55px;
+    font-family:"Quicksand", sans-serif;
+}
+.description-profil{
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+}
+.description-liste{
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    padding:0px;
+}
+.element-profil{
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 15px;
+}
+/**-----------------------------------------------------**/
+.hr{
+    box-sizing: content-box;
+    height: 0;
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: .25;
+    width:1000px;
+}
+.h3-left{
+    font-family: "Quicksand", sans-serif;
+    text-align: left;
+}
+.h3-right{
+    font-family: "Quicksand", sans-serif;
+    text-align: right;
+}
+/**-----------------------------------------------------**/
+
+.content-profil{
+
+}
+/**-----------------------------------------------------**/
+.compte{
+
+}
+/**-----------------------------------------------------**/
+.commandes{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**-----------------------------------------------------**/
+.historique{
+
+}
