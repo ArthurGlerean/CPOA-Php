@@ -35,6 +35,7 @@
             else{
                 //**on attribue les coordonnées aux variables de SESSION */
                 $_SESSION["isConnected"] = 1;
+                $_SESSION["id_user"] = oci_result($query_search2, 'IDENTIFIANT');
                 $_SESSION["username"]=oci_result($query_search2, 'NOM_UTILISATEUR');
                 $_SESSION["email_user"]=oci_result($query_search2, 'MAIL');
             }
