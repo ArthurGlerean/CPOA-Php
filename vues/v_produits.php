@@ -118,8 +118,8 @@
                                             <h5 class='card-title font-weight-bold'>".oci_result($query_Chaine, 'LIBELLE')."</h5>
                                             <p class='card-text'>".oci_result($query_Chaine, 'PRIX')."€</p>
                                             <div class='link_buttons'>
-                                                <a href='?index.php&target=details_produits&ref=".oci_result($query_Chaine, 'IDPRODUIT')."' class='btn details px-auto'>view details</a><br />
-                                                <a href='#' class='btn cart px-auto'>ADD TO CART</a>
+                                                <a href='?index.php&target=details_produits&ref=".oci_result($query_Chaine, 'IDPRODUIT')."' class='btn details px-auto'>voir les détails</a><br />
+                                                <a href='#' class='btn cart px-auto'>Ajouter au panier</a>
                                             </div>
                                         </div>
                                     </div>
@@ -158,8 +158,8 @@
                                             <h5 class='card-title font-weight-bold'>".oci_result($query_Montre, 'LIBELLE')."</h5>
                                             <p class='card-text'>".oci_result($query_Montre, 'PRIX')."€</p>
                                             <div class='link_buttons'>
-                                                <a href='?index.php&target=details_produits&ref=".oci_result($query_Montre, 'IDPRODUIT')."' class='btn details px-auto'>view details</a><br />
-                                                <a href='#' class='btn cart px-auto'>ADD TO CART</a>
+                                                <a href='?index.php&target=details_produits&ref=".oci_result($query_Montre, 'IDPRODUIT')."' class='btn details px-auto'>voir les détails</a><br />
+                                                <a href='#' class='btn cart px-auto'>Ajouter au panier</a>
                                             </div>
                                         </div>
                                     </div>
@@ -195,8 +195,8 @@
                                             <h5 class='card-title font-weight-bold'>".oci_result($query_Bague, 'LIBELLE')."</h5>
                                             <p class='card-text'>".oci_result($query_Bague, 'PRIX')."€</p>
                                             <div class='link_buttons'>
-                                                <a href='?index.php&target=details_produits&ref=".oci_result($query_Bague, 'IDPRODUIT')."' class='btn details px-auto'>view details</a><br />
-                                                <a href='#' class='btn cart px-auto'>ADD TO CART</a>
+                                                <a href='?index.php&target=details_produits&ref=".oci_result($query_Bague, 'IDPRODUIT')."' class='btn details px-auto'>voir les détails</a><br />
+                                                <a href='#' class='btn cart px-auto'>Ajouter au panier</a>
                                             </div>
                                         </div>
                                     </div>

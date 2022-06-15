@@ -30,23 +30,6 @@
                         afficher_articles($bdd,$ref_panier);
                     ?>
 
-
-                    <?php for($i = 0; $i < $nb_articles; $i++){ echo"
-                            <div class='row border-top border-bottom'>
-                                <div class='row main align-items-center'>
-                                    <div class='col-2'><img class='img-fluid' src='https://i.imgur.com/1GrakTl.jpg'></div>
-                                    <div class='col'>
-                                        <div class='row text-muted'>Montre</div>
-                                        <div class='row'>Montre connectée</div>
-                                    </div>
-                                    <div class='col'>
-                                        <a href='#'>-</a><a href='#' class='border'>1</a><a href='#'>+</a>
-                                    </div>
-                                    <div class='col'>&euro; 44.00 <span class='close'>&#10005;</span></div>
-                                </div>
-                            </div>
-                        "; } 
-                    ?>
                     <!--------------------------------------------->
 
                     
