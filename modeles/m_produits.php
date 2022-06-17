@@ -7,6 +7,23 @@
         oci_bind_by_name(${"query_$cat"}, ':cat', $cat);
         oci_execute(${"query_$cat"});
         //echo "query_".$cat;
-    }   
+    }  
+    //fonctions pour afficher les images.
+    
+    function read_clob($field) {
+        return $field->read($field->size());
+    }
+    function readImagesProduit($bdd,$id){
+        $query_test = oci_parse($bdd, 'Select IMAGE_1 from LOT_IMAGES l where l.NUM_PRODUIT= :n_id');
+        oci_bind_by_name($query_test, ':n_id', $id);
+        oci_execute($query_test);
+        oci_fetch($query_test);
+        $result=oci_result($query_test, 'IMAGE_1');
+        $result2 = read_clob($result);
+        return $result2;    
+    }
+
+    
+
     oci_close($bdd);
 ?>

@@ -26,7 +26,7 @@
             echo "
             <div class='row border-top border-bottom'>
                                 <div class='row main align-items-center'>
-                                    <div class='col-2'><img class='img-fluid' src='./images/test_bracelet2.jpg'></div>
+                                    <div class='col-2'><img class='img-fluid' src='" .readImagesProduit($bdd,1) ."'></div>
                                     <div class='col'>
                                         <div class='row text-muted'>Montre</div>
                                         <div class='row'>".oci_result($query_articles,'LIBELLE')."</div>

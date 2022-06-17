@@ -6,6 +6,7 @@
     }
     else{
         require_once("./modeles/m_panier.php");
+        require_once("./modeles/m_produits.php");
         require_once("./vues/v_panier.php");
     }
     

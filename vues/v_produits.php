@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="./styles/s_produits.css" rel="stylesheet">
-    <title>Document</title>
+    <title>easyJewel Le Site Officiel | Panier</title>
 </head>
 <body>
     <header>
@@ -56,7 +56,7 @@
                 echo "
                 <section class='gourmettes'>
                     <section class='en-tete-gourmettes'>
-                        <h2>Gourmettes</h2>
+                        <h2>Bracelets</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum illo dolorum ipsum tenetur facere, quaerat dolores, harum ducimus animi ex inventore, suscipit doloremque facilis a quasi velit officiis nostrum?</p>
                     </section>
                     <section class='gourmettes-content'>
@@ -64,11 +64,12 @@
         ?>
                     <?php 
                         while(oci_fetch($query_Bracelet)){
+                            $id_bracelet=oci_result($query_Bracelet, 'IDPRODUIT');
                             echo " 
                             <div class='container-fluid'>
                                 <div class='card mx-auto col-md-3 col-10 mt-5'>
                                     <img class='mx-auto img-thumbnail'
-                                        src='./images/test_bracelet2.jpg'
+                                        src='".readImagesProduit($bdd,$id_bracelet)."'
                                     />
                                     <div class='card-body text-center mx-auto'>
                                         <div class='cvp'>
@@ -107,11 +108,12 @@
         ?>
                 <?php 
                         while(oci_fetch($query_Chaine)){
+                            $id_chaine=oci_result($query_Chaine, 'IDPRODUIT');
                             echo " 
                             <div class='container-fluid'>
                                 <div class='card mx-auto col-md-3 col-10 mt-5'>
                                     <img class='mx-auto img-thumbnail'
-                                        src='./images/test_bracelet2.jpg'
+                                        src='".readImagesProduit($bdd,$id_chaine)."'
                                     />
                                     <div class='card-body text-center mx-auto'>
                                         <div class='cvp'>
@@ -147,11 +149,12 @@
         ?>
                 <?php 
                         while(oci_fetch($query_Montre)){
+                            $id_montre=oci_result($query_Montre, 'IDPRODUIT');
                             echo " 
                             <div class='container-fluid'>
                                 <div class='card mx-auto col-md-3 col-10 mt-5'>
                                     <img class='mx-auto img-thumbnail'
-                                        src='./images/test_bracelet2.jpg'
+                                        src='".readImagesProduit($bdd,$id_montre)."'
                                     />
                                     <div class='card-body text-center mx-auto'>
                                         <div class='cvp'>
@@ -184,11 +187,12 @@
         ?>
                 <?php 
                         while(oci_fetch($query_Bague)){
+                            $id_bague=oci_result($query_Bague, 'IDPRODUIT');
                             echo " 
                             <div class='container-fluid'>
                                 <div class='card mx-auto col-md-3 col-10 mt-5'>
                                     <img class='mx-auto img-thumbnail'
-                                        src='./images/test_bracelet2.jpg'
+                                        src='".readImagesProduit($bdd,$id_bague)."'
                                     />
                                     <div class='card-body text-center mx-auto'>
                                         <div class='cvp'>
@@ -212,3 +216,4 @@
     </main>
     
 </body>
+

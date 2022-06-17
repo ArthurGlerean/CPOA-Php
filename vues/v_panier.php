@@ -33,7 +33,7 @@
                     <!--------------------------------------------->
 
                     
-                    <div class="back-to-shop"><a href="#">&leftarrow;</a><span class="text-muted">Retour au shopping</span></div>
+                    <div class="back-to-shop"><a href="?index.php&target=produits">&leftarrow;</a><span class="text-muted">Retour au shopping</span></div>
                 </div>
                 <div class="col-md-4 summary">
                     <div><h5><b>Summary</b></h5></div>
