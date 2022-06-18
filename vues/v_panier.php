@@ -15,6 +15,7 @@
     </header>
     <main>
         <h2 class="title-panier"> Mon Panier 🛒 </h2>
+        <hr>
         <div class="card-panier">
             <div class="row">
                 <div class="col-md-8 cart">
@@ -42,17 +43,18 @@
                         <div class="col" style="padding-left:0;">ITEMS 3</div>
                         <div class="col text-right">&euro; 132.00</div>
                     </div>
-                    <form>
+                    <form method="post">
                         <p>SHIPPING</p>
                         <select><option class="text-muted">Standard-Delivery- &euro;5.00</option></select>
                         <p>GIVE CODE</p>
                         <input id="code" placeholder="Enter your code">
+                    
+                        <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                            <div class="col">TOTAL PRICE</div>
+                            <div class="col text-right">&euro; 137.00</div>
+                        </div>
+                        <button class="btn" type="submit" name="panierSubmit">COMMANDER</button>
                     </form>
-                    <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
-                        <div class="col">TOTAL PRICE</div>
-                        <div class="col text-right">&euro; 137.00</div>
-                    </div>
-                    <button class="btn">CHECKOUT</button>
                 </div>
             </div>
             

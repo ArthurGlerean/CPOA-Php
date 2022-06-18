@@ -12,6 +12,10 @@ main{
     margin-bottom: 20px;
     text-align: center;
 }
+hr{
+    margin-top:20px;
+    margin-bottom:20px;
+}
 .title-panier2{
     margin-bottom: 5vh;
     color:black;
