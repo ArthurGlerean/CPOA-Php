@@ -5,7 +5,7 @@
     $chaines = 0;
     $gourmettes = 0;
     $bagues = 0;
-    
+    $erreur_ajout_panier="";
     include_once("./lib/connectDb.php");
     include_once("./lib/ajout_panier.php");
     include_once("./lib/read_clob.php");
@@ -34,7 +34,13 @@
         }
     }
     if(isset($_POST["submitProduit"])){
-        ajout_panier($bdd,$_SESSION["id_user"],$_POST["ref_produit"]);
+        if($_SESSION["isConnected"] == 0 || $_SESSION["isConnected"] == 2){
+            $erreur_ajout_panier.="<p class='erreur_ajout_panier'>Vous devez être connecté pour pouvoir ajouter un produit au panier !</p>";
+        }
+        else{
+            ajout_panier($bdd,$_SESSION["id_user"],$_POST["ref_produit"]);
+        }
+        
     }
      require_once("./vues/v_produits.php");
     

@@ -14,7 +14,10 @@ main{
 .en-tete-produits{
     text-align: center;
 }
-
+.erreur_ajout_panier{
+    color:red;
+    text-align: center;
+}
 .gourmettes{
     text-align:right;
 }

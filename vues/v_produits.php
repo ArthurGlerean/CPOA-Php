@@ -57,10 +57,15 @@
                 <section class='gourmettes'>
                     <section class='en-tete-gourmettes'>
                         <h2>Bracelets</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum illo dolorum ipsum tenetur facere, quaerat dolores, harum ducimus animi ex inventore, suscipit doloremque facilis a quasi velit officiis nostrum?</p>
-                    </section>
-                    <section class='gourmettes-content'>
-                    ";
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum illo dolorum ipsum tenetur facere, quaerat dolores, harum ducimus animi ex inventore, suscipit doloremque facilis a quasi velit officiis nostrum?</p>";
+                        if(isset($erreur_ajout_panier) && !empty($erreur_ajout_panier)){
+                            echo "<p>".$erreur_ajout_panier."</p>";
+                        }
+                    echo "</section>
+                    <section class='gourmettes-content'>";
+                    
+            }
+                    
         ?>
                     <?php 
                         while(oci_fetch($query_Bracelet)){
@@ -93,9 +98,7 @@
                     ?>
                     </section>
                 </section>
-            <?php 
-            }
-            ?>
+           
 
 
         <?php 
