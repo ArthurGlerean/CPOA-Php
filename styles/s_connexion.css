@@ -26,7 +26,7 @@ main{
 .card-img-left {
     width: 45%;
     /* Link to your background image using in the property below! */
-    background-image: url('../images/watch_background_connexion.jpg');
+    background-image: url('https://drive.google.com/uc?id=1PoN7-uuN30xnggQFXbwaOBhx4ca9GNqB');
     background-position: 30%;
     background-size: cover;
   }

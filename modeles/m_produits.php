@@ -10,9 +10,7 @@
     }  
     //fonctions pour afficher les images.
     
-    function read_clob($field) {
-        return $field->read($field->size());
-    }
+   
     function readImagesProduit($bdd,$id){
         $query_test = oci_parse($bdd, 'Select IMAGE_1 from LOT_IMAGES l where l.NUM_PRODUIT= :n_id');
         oci_bind_by_name($query_test, ':n_id', $id);

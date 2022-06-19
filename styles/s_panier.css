@@ -1,10 +1,16 @@
 body{
-    display: flex;
+    display:flex;
     flex-direction: column;
+    font-family:"Quicksand", sans-serif;
 }
+
+header{
+    height:65px;
+}
+
 main{
-    margin:auto;
-    align-items: center;
+    margin:100px;
+    align-self: center;
 }
 .title-panier{
     font-size: 50px;
@@ -141,7 +147,8 @@ input:focus::-webkit-input-placeholder
     transition: none; 
 }
 .btn:hover{
-    color: white;
+    color: #000;
+    background-color: #00E676;
 }
 a{
     color: black; 

@@ -29,7 +29,7 @@
                 <label>
                     <select name="select_categorie">
                         <option <?php if($all == 1){ echo "selected";}else{ echo""; } ?>> -Catégorie- </option>
-                        <option <?php if($gourmettes == 1){ echo "selected";}else{ echo"";} ?>> Gourmettes </option>
+                        <option <?php if($gourmettes == 1){ echo "selected";}else{ echo"";} ?>> Bracelets </option>
                         <option <?php if($montres == 1){ echo "selected";} else{ echo"";}?>> Montres </option>
                         <option <?php if($chaines == 1){ echo "selected";} else{ echo"";}?>> Chaines </option>
                         <option <?php if($bagues == 1){ echo "selected";} else{ echo"";}?>> Bagues </option>
@@ -73,12 +73,15 @@
                                     />
                                     <div class='card-body text-center mx-auto'>
                                         <div class='cvp'>
-                                            <h5 class='card-title font-weight-bold'>".oci_result($query_Bracelet, 'LIBELLE')."</h5>
-                                            <p class='card-text'>".oci_result($query_Bracelet, 'PRIX')."€</p>
-                                            <div class='link_buttons'>
-                                                <a href='?index.php&target=details_produits&ref=".oci_result($query_Bracelet, 'IDPRODUIT')."' class='btn details px-auto'>voir les détails</a><br />
-                                                <a href='#' class='btn cart px-auto'>Ajouter au panier</a>
-                                            </div>
+                                            <form class='form_produit' method='post'>
+                                                <h5 class='card-title font-weight-bold'>".oci_result($query_Bracelet, 'LIBELLE')."</h5>
+                                                <input style='visibility:hidden;width:1px;height:1px'name='ref_produit' value=".oci_result($query_Bracelet, 'IDPRODUIT').">
+                                                <p class='card-text'>".oci_result($query_Bracelet, 'PRIX')."€</p>
+                                                <div class='link_buttons'>
+                                                    <a href='?index.php&target=details_produits&ref=".oci_result($query_Bracelet, 'IDPRODUIT')."' class='btn details px-auto'>voir les détails</a><br />
+                                                    <button  class='btn cart px-auto' type='submit' name='submitProduit' >Ajouter au panier</a>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
