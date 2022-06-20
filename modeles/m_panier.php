@@ -8,13 +8,15 @@
     oci_fetch($query_paniers);
     $ref_panier = oci_result($query_paniers, 'ID_PANIER');
     $prix_total = oci_result($query_paniers, 'PRIX_TOTAL');
-    //foonction pour afficher les produits avec détails du panier $ref_panier
+
+
+    //fonction pour afficher les produits avec détails du panier $ref_panier
     function afficher_articles($bdd,$ref_panier){
         $query_produits = oci_parse($bdd, 'Select * from LIGNE_PRODUIT where PANIER_ID = :n_panier');
         oci_bind_by_name($query_produits, ':n_panier', $ref_panier);
         oci_execute($query_produits);
         $prix_total = 0;
-        while (($row = oci_fetch_array($query_produits, OCI_BOTH)) != false) {
+        while (($row = oci_fetch_array($query_produits, OCI_BOTH)) != false) {  //affichage des produits dans une boucle
             $ref_article = $row["ID_PRODUIT"];
 
             //requête pour récupérer le nom et le prix du produit $ref_article
@@ -39,12 +41,14 @@
         }
     }
 
-    function nb_articles($bdd,$ref_panier){
+
+    //fonction pour afficher le nombre de produits dans le panier $ref_panier
+    function nb_articles($bdd,$ref_panier){ 
         $query_produits = oci_parse($bdd, 'Select * from LIGNE_PRODUIT where PANIER_ID = :n_panier');
         oci_bind_by_name($query_produits, ':n_panier', $ref_panier);
         oci_execute($query_produits);
         $nb_articles = 0;
-        while (($row = oci_fetch_array($query_produits, OCI_BOTH)) != false) {
+        while (($row = oci_fetch_array($query_produits, OCI_BOTH)) != false) {  //on compte le nombre de produits dans le panier
             $nb_articles++;
         }
         return $nb_articles;

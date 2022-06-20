@@ -14,9 +14,8 @@
         <?php require_once("./vues/v_menu_fixe.php"); ?>
     </header>
     <main>
-        <?php
+        <?php   //affichaage du formulaire d'inscription
             if(isset($_GET["type"]) && $_GET["type"] == "inscription"){ echo "
-
             <div class='container_form'>
                 <div class='row'>
                     <div class='col-lg-10 col-xl-9 mx-auto'>
@@ -67,7 +66,7 @@
         ";
         }
         ?>
-        <?php
+        <?php   //affichaage du formulaire de connexion
             if(isset($_GET["type"]) && $_GET["type"] == "connexion"){ echo "
 
             <div class='container_form'>

@@ -17,7 +17,9 @@
 
         <section class="en-tete-produits">
             <h1>Nos Produits</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea placeat maiores expedita aspernatur maxime accusantium, soluta perferendis deserunt non laboriosam commodi sunt pariatur facere libero. Velit provident maiores tenetur odit.</p>
+            <p>
+                Depuis 2022, easyJewel donne toute son énergie pour vous proposer des bijoux de qualité. Vous trouverez ici tous nos produits. Vous pouvez les triez si vous le souhaitez. Tous nos produits sont disponibles en taille unique.
+            </p>    
         </section>
         <form class="barre-filtres" method="post">
             <div>

@@ -54,6 +54,7 @@ main{
     color:black;
     text-align:center;
 }
+
 /** FILTER BAR **/
 .barre-filtres{
     display:flex;
@@ -64,13 +65,11 @@ main{
 }
 .selectdiv {
     position: relative;
-    /*Don't really need this just for demo styling*/
     
     float: left;
     min-width: 200px;
   }
   
-  /* IE11 hide native button (thanks Matt!) */
   select::-ms-expand {
   display: none;
   }
@@ -84,12 +83,10 @@ main{
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     right: 11px;
-    /*Adjust for position however you want*/
     
     top: 18px;
     padding: 0 0 2px;
     border-bottom: 1px solid #999;
-    /*left line */
     
     position: absolute;
     pointer-events: none;
@@ -99,7 +96,6 @@ main{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    /* Add some styling */
     
     display: block;
     width: 100%;

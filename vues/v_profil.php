@@ -23,6 +23,7 @@
                     <li class="element-profil">📧 <?php echo $_SESSION["email_user"];?></li>
                     <li class="element-profil">🍀 Client fidèle à easyJewel</li>
                 </ul>
+                <a href="index.php?target=profil&action=deconnexion" class="btn btn-primary">Déconnexion</a>
             </div>
         </div>
         <hr class="hr">

@@ -6,13 +6,13 @@
     <div class="command-identity">
         <article class="card-command">
             <div class="card-body-command">
-                <h6>Order ID: OD45345345435</h6>
+                <h6>Ordre ID: OD45345345435</h6>
                 <article class="card">
                     <div class="card-body row">
-                        <div class="col"> <strong>Estimated Delivery time:</strong> <br>29 nov 2019 </div>
-                        <div class="col"> <strong>Shipping BY:</strong> <br> BLUEDART, | <i class="fa fa-phone"></i> +1598675986 </div>
-                        <div class="col"> <strong>Status:</strong> <br> Picked by the courier </div>
-                        <div class="col"> <strong>Tracking #:</strong> <br> BD045903594059 </div>
+                        <div class="col"> <strong>Date d'estimation d'arrivée:</strong> <br>01 juillet 2022 </div>
+                        <div class="col"> <strong>Expédié par:</strong> <br> easyJewel, | <i class="fa fa-phone"></i> +337125451 </div>
+                        <div class="col"> <strong>Status:</strong> <br> En cours de livraison </div>
+                        <div class="col"> <strong>Numéro de commande #:</strong> <br> 1225415 </div>
                     </div>
                 </article>
                 <div class="track">
@@ -27,7 +27,7 @@
                         <figure class="itemside mb-3">
                             <div class="aside"><img src="https://drive.google.com/uc?id=108Sbi8EwAPDIhdwXXDz5rq6PHnD4OURf" class="img-sm border"></div>
                             <figcaption class="info align-self-center">
-                                <p class="title-article">Dell Laptop with 500GB HDD <br> 8GB RAM</p> <span class="text-muted">$950 </span>
+                                <p class="title-article">Produit n°1 </p> <span class="text-muted">$15 </span>
                             </figcaption>
                         </figure>
                     </li>
@@ -35,7 +35,7 @@
                         <figure class="itemside mb-3">
                             <div class="aside"><img src="https://drive.google.com/uc?id=108Sbi8EwAPDIhdwXXDz5rq6PHnD4OURf" class="img-sm border"></div>
                             <figcaption class="info align-self-center">
-                                <p class="title-article">HP Laptop with 500GB HDD <br> 8GB RAM</p> <span class="text-muted">$850 </span>
+                            <p class="title-article">Produit n°2 </p> <span class="text-muted">$15 </span>
                             </figcaption>
                         </figure>
                     </li>
@@ -43,7 +43,7 @@
                         <figure class="itemside mb-3">
                             <div class="aside"><img src="https://drive.google.com/uc?id=108Sbi8EwAPDIhdwXXDz5rq6PHnD4OURf" class="img-sm border"></div>
                             <figcaption class="info align-self-center">
-                                <p class="title-article">ACER Laptop with 500GB HDD <br> 8GB RAM</p> <span class="text-muted">$650 </span>
+                            <p class="title-article">Produit n°3 </p> <span class="text-muted">$15 </span>
                             </figcaption>
                         </figure>
                     </li>

@@ -1,5 +1,6 @@
 <?php
-    function read_clob($field) {            //fonction de conversion de CLOB en string
+    //fonction de conversion de CLOB en string
+    function read_clob($field) {            
         return $field->read($field->size());
     }
 ?>

@@ -1,4 +1,5 @@
 <?php
+    //fonction de connexion à la base de données
     $bdd = oci_new_connect('p2006969','584758','(
         Description = (
             address_list = 

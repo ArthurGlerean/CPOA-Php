@@ -4,7 +4,7 @@
     oci_bind_by_name($query_add_commande, ':n_id_commande', $_GET["commande"]);
     oci_bind_by_name($query_add_commande, ':n_id_client', $_SESSION["id_user"]);
     oci_bind_by_name($query_add_commande, ':n_prix', $_GET["price"]);
-    $day = date("d") + 10;
+    $day = date("d") + 10;      //la livraison sera dans 10 jours
     $date_livraison = date(''.$day.'-m-y');
     oci_bind_by_name($query_add_commande, ':n_date_livraison', $date_livraison);
     $etat = 1;
