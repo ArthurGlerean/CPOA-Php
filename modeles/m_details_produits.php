@@ -1,5 +1,13 @@
 <?php
     $erreur_commentaire ="";
+    //récupère le nombre de commentaires du produit
+    $query_nb_com = oci_parse($bdd, "SELECT NB_COMMENTAIRES FROM PRODUITS WHERE IDPRODUIT = :id_produit");
+    oci_bind_by_name($query_nb_com, ":id_produit", $_GET["ref"]);
+    oci_execute($query_nb_com);
+    oci_fetch($query_nb_com);
+    $nb_commentaires = oci_result($query_nb_com, "NB_COMMENTAIRES");
+
+    //on traite le formulaire d'ajout de commentaires.
     if(isset($_POST["submitComment"])){
         if($_SESSION["isConnected"] == 1){
             //Est-ce que l'utilisateur a déjà commenté ce produit ?
@@ -9,7 +17,7 @@
             oci_execute($query_comment_number);
             $comment_exist = oci_fetch_array($query_comment_number)[0];
             if($comment_exist > 0){
-                $erreur_commentaire.="<p class='erreur_commentaire'>Vous avez déjà commenté ce produit !</p>";
+                $erreur_commentaire.="Vous avez déjà commenté ce produit !";
             }
             else{
                 //Toutes les étapes sont validées, on peut ajouter le commentaire dans la base de données...
@@ -24,7 +32,7 @@
             }
         }
         else{
-            $erreur_commentaire.= "<p class='erreur_commentaire'>Vous devez être connecté pour pouvoir poster un commentaire.</p>";
+            $erreur_commentaire.= "Vous devez être connecté pour pouvoir poster un commentaire.";
         }
     }
 

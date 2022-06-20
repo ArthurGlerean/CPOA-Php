@@ -16,16 +16,16 @@
                     </div>
                 </article>
                 <div class="track">
-                    <div class="step active"> <span class="icon"> <i class="fa fa-check"></i> </span> <span class="text">Order confirmed</span> </div>
-                    <div class="step active"> <span class="icon"> <i class="fa fa-user"></i> </span> <span class="text"> Picked by courier</span> </div>
-                    <div class="step"> <span class="icon"> <i class="fa fa-truck"></i> </span> <span class="text"> On the way </span> </div>
-                    <div class="step"> <span class="icon"> <i class="fa fa-box"></i> </span> <span class="text">Ready for pickup</span> </div>
+                    <div class="step active"> <span class="icon"> <i class="fa fa-check"></i> </span> <span class="text">Commande confirmée</span> </div>
+                    <div class="step active"> <span class="icon"> <i class="fa fa-user"></i> </span> <span class="text"> Commande en cours de traitement</span> </div>
+                    <div class="step"> <span class="icon"> <i class="fa fa-truck"></i> </span> <span class="text"> En cours de livraison </span> </div>
+                    <div class="step"> <span class="icon"> <i class="fa fa-box"></i> </span> <span class="text">Prêt à être récupérée</span> </div>
                 </div>
                 <hr>
                 <ul class="row">
                     <li class="col-md-4">
                         <figure class="itemside mb-3">
-                            <div class="aside"><img src="./images/test_bracelet2.jpg" class="img-sm border"></div>
+                            <div class="aside"><img src="https://drive.google.com/uc?id=108Sbi8EwAPDIhdwXXDz5rq6PHnD4OURf" class="img-sm border"></div>
                             <figcaption class="info align-self-center">
                                 <p class="title-article">Dell Laptop with 500GB HDD <br> 8GB RAM</p> <span class="text-muted">$950 </span>
                             </figcaption>
@@ -33,7 +33,7 @@
                     </li>
                     <li class="col-md-4">
                         <figure class="itemside mb-3">
-                            <div class="aside"><img src="./images/test_bracelet2.jpg" class="img-sm border"></div>
+                            <div class="aside"><img src="https://drive.google.com/uc?id=108Sbi8EwAPDIhdwXXDz5rq6PHnD4OURf" class="img-sm border"></div>
                             <figcaption class="info align-self-center">
                                 <p class="title-article">HP Laptop with 500GB HDD <br> 8GB RAM</p> <span class="text-muted">$850 </span>
                             </figcaption>
@@ -41,7 +41,7 @@
                     </li>
                     <li class="col-md-4">
                         <figure class="itemside mb-3">
-                            <div class="aside"><img src="./images/test_bracelet2.jpg" class="img-sm border"></div>
+                            <div class="aside"><img src="https://drive.google.com/uc?id=108Sbi8EwAPDIhdwXXDz5rq6PHnD4OURf" class="img-sm border"></div>
                             <figcaption class="info align-self-center">
                                 <p class="title-article">ACER Laptop with 500GB HDD <br> 8GB RAM</p> <span class="text-muted">$650 </span>
                             </figcaption>

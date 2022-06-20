@@ -22,7 +22,7 @@
                     <div class="title">
                         <div class="row">
                             <div class="col"><h4 class="title-panier2"><b>Mon shopping</b></h4></div>
-                            <div class="col align-self-center text-right text-muted"><?php echo $nb_articles;?> articles</div>
+                            <div class="col align-self-center text-right text-muted"><?php echo nb_articles($bdd,$ref_panier); ?> articles</div>
                         </div>
                     </div>  
                     
@@ -37,21 +37,21 @@
                     <div class="back-to-shop"><a href="?index.php&target=produits">&leftarrow;</a><span class="text-muted">Retour au shopping</span></div>
                 </div>
                 <div class="col-md-4 summary">
-                    <div><h5><b>Summary</b></h5></div>
+                    <div><h5><b>Résumé</b></h5></div>
                     <hr>
                     <div class="row">
-                        <div class="col" style="padding-left:0;">ITEMS 3</div>
+                        <div class="col" style="padding-left:0;">Articles <?php echo nb_articles($bdd,$ref_panier); ?></div>
                         <div class="col text-right">&euro; <?php echo $prix_total; ?></div>
                     </div>
                     <form method="post">
                         <p>LIVRAISON</p>
                         <select><option class="text-muted">Livraison-Standard &euro;5.00</option></select>
-                        <p>GIVE CODE</p>
-                        <input id="code" placeholder="Enter your code">
+                        <p>CODE PROMO</p>
+                        <input id="code" placeholder="Saisissez votre code">
                     
                         <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
-                            <div class="col">TOTAL PRICE</div>
-                            <div class="col text-right">&euro; <?php echo $prix_total; ?></div>
+                            <div class="col">PRIX TOTAL</div>
+                            <div class="col text-right">&euro; <?php echo $prix_total ; ?></div>
                         </div>
                         <button class="btn" type="submit" name="panierSubmit">COMMANDER</button>
                     </form>

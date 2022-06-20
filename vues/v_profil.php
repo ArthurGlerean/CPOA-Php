@@ -33,9 +33,10 @@
             </div>
             <div class="historique">
                 <h3 class="h3-right">Mon Historique</h3>
-            </div>
-            <div class="propriétés">
-                <h3 class="h3-left">Mes Propriétés</h3>
+                <p>Ici s'affiche l'ensemble des commandes déjà reçus !</p>
+                <div class="historique-content">
+                    <?php affiche_commandes_recues($bdd,$_SESSION["id_user"])?>
+                </div>
             </div>
         </div>
         

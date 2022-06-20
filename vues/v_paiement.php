@@ -14,7 +14,7 @@
         <?php require_once("./vues/v_menu_fixe.php"); ?>
     </header>
     <main>
-        <h2 class="title-paiement"> Mon Paiement 📦 </h2>
+        <h2 class="title-paiement"><a class="return" href="?index.php&target=panier"> < </a> Mon Paiement 📦 </h2>
         <hr>
         <div class="container p-0">
             <div class="card px-4">
@@ -46,7 +46,7 @@
                     </div>
                     <div class="col-12">
                         <div class="btn btn-primary mb-3">
-                            <span class="ps-3">Payer $243</span>
+                            <a class="ps-3" href="?index.php&target=commande_valide&commande=<?php echo $ref_panier;?>&price=<?php echo $prix_total; ?>">Payer &euro;<?php echo $prix_total; ?></a>
                             <span class="fas fa-arrow-right"></span>
                         </div>
                     </div>

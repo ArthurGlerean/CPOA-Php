@@ -10,7 +10,7 @@
                 <ul class="navlinks">
                     <li><a href="?index.php&target=home">Accueil</a></li>
                     <li><a href="?index.php&target=produits">Nos produits</a></li>
-                    <li><a href="?index.php&target=panier">Mon panier</a></li>
+                    <li><a href="?index.php&target=panier"><?php if($_SESSION["isConnected"] == 1){echo "Mon Panier";} ?></a></li>
                     <li><a href="?index.php&target=<?php if($_SESSION["isConnected"]== 1){echo "profil";}else{ echo "connexion&type=inscription"; } ?>">
                             <?php if($_SESSION["isConnected"]== 1){echo "Mon profil";}else{ echo "Me connecter"; } ?>
                         </a>
@@ -27,15 +27,11 @@
     
     <section class="home">
     </section>
-    <!-- <div style="height: 1000px">
 			
-    </div> -->
 
-<!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="./app.js"></script>
 
-<!-- Function used to shrink nav bar removing paddings and adding black background -->
     <script>
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {

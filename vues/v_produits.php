@@ -29,7 +29,7 @@
                 <label>
                     <select name="select_categorie">
                         <option <?php if($all == 1){ echo "selected";}else{ echo""; } ?>> -Catégorie- </option>
-                        <option <?php if($gourmettes == 1){ echo "selected";}else{ echo"";} ?>> Bracelets </option>
+                        <option <?php if($bracelets == 1){ echo "selected";}else{ echo"";} ?>> Bracelets </option>
                         <option <?php if($montres == 1){ echo "selected";} else{ echo"";}?>> Montres </option>
                         <option <?php if($chaines == 1){ echo "selected";} else{ echo"";}?>> Chaines </option>
                         <option <?php if($bagues == 1){ echo "selected";} else{ echo"";}?>> Bagues </option>
@@ -52,19 +52,16 @@
 
 
         <?php 
-            if($gourmettes == 1 || $all == 1){
+            if($bracelets == 1 || $all == 1){
                 echo "
                 <section class='gourmettes'>
                     <section class='en-tete-gourmettes'>
                         <h2>Bracelets</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum illo dolorum ipsum tenetur facere, quaerat dolores, harum ducimus animi ex inventore, suscipit doloremque facilis a quasi velit officiis nostrum?</p>";
-                        if(isset($erreur_ajout_panier) && !empty($erreur_ajout_panier)){
-                            echo "<p>".$erreur_ajout_panier."</p>";
-                        }
                     echo "</section>
                     <section class='gourmettes-content'>";
                     
-            }
+            
                     
         ?>
                     <?php 
@@ -95,6 +92,7 @@
                             ";
                         } 
                         oci_free_statement($query_Bracelet);
+        }
                     ?>
                     </section>
                 </section>
@@ -123,12 +121,15 @@
                                     />
                                     <div class='card-body text-center mx-auto'>
                                         <div class='cvp'>
-                                            <h5 class='card-title font-weight-bold'>".oci_result($query_Chaine, 'LIBELLE')."</h5>
-                                            <p class='card-text'>".oci_result($query_Chaine, 'PRIX')."€</p>
-                                            <div class='link_buttons'>
-                                                <a href='?index.php&target=details_produits&ref=".oci_result($query_Chaine, 'IDPRODUIT')."' class='btn details px-auto'>voir les détails</a><br />
-                                                <a href='#' class='btn cart px-auto'>Ajouter au panier</a>
-                                            </div>
+                                            <form class='form_produit' method='post'>
+                                                <h5 class='card-title font-weight-bold'>".oci_result($query_Chaine, 'LIBELLE')."</h5>
+                                                <input style='visibility:hidden;width:1px;height:1px'name='ref_produit' value=".oci_result($query_Chaine, 'IDPRODUIT').">
+                                                <p class='card-text'>".oci_result($query_Chaine, 'PRIX')."€</p>
+                                                <div class='link_buttons'>
+                                                    <a href='?index.php&target=details_produits&ref=".oci_result($query_Chaine, 'IDPRODUIT')."' class='btn details px-auto'>voir les détails</a><br />
+                                                    <button  class='btn cart px-auto' type='submit' name='submitProduit' >Ajouter au panier</a>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -164,12 +165,15 @@
                                     />
                                     <div class='card-body text-center mx-auto'>
                                         <div class='cvp'>
-                                            <h5 class='card-title font-weight-bold'>".oci_result($query_Montre, 'LIBELLE')."</h5>
-                                            <p class='card-text'>".oci_result($query_Montre, 'PRIX')."€</p>
-                                            <div class='link_buttons'>
-                                                <a href='?index.php&target=details_produits&ref=".oci_result($query_Montre, 'IDPRODUIT')."' class='btn details px-auto'>voir les détails</a><br />
-                                                <a href='#' class='btn cart px-auto'>Ajouter au panier</a>
-                                            </div>
+                                            <form class='form_produit' method='post'>
+                                                <h5 class='card-title font-weight-bold'>".oci_result($query_Montre, 'LIBELLE')."</h5>
+                                                <input style='visibility:hidden;width:1px;height:1px'name='ref_produit' value=".oci_result($query_Montre, 'IDPRODUIT').">
+                                                <p class='card-text'>".oci_result($query_Montre, 'PRIX')."€</p>
+                                                <div class='link_buttons'>
+                                                    <a href='?index.php&target=details_produits&ref=".oci_result($query_Montre, 'IDPRODUIT')."' class='btn details px-auto'>voir les détails</a><br />
+                                                    <button  class='btn cart px-auto' type='submit' name='submitProduit' >Ajouter au panier</a>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -202,12 +206,15 @@
                                     />
                                     <div class='card-body text-center mx-auto'>
                                         <div class='cvp'>
-                                            <h5 class='card-title font-weight-bold'>".oci_result($query_Bague, 'LIBELLE')."</h5>
-                                            <p class='card-text'>".oci_result($query_Bague, 'PRIX')."€</p>
-                                            <div class='link_buttons'>
-                                                <a href='?index.php&target=details_produits&ref=".oci_result($query_Bague, 'IDPRODUIT')."' class='btn details px-auto'>voir les détails</a><br />
-                                                <a href='#' class='btn cart px-auto'>Ajouter au panier</a>
-                                            </div>
+                                            <form class='form_produit' method='post'>
+                                                <h5 class='card-title font-weight-bold'>".oci_result($query_Bague, 'LIBELLE')."</h5>
+                                                <input style='visibility:hidden;width:1px;height:1px'name='ref_produit' value=".oci_result($query_Bague, 'IDPRODUIT').">
+                                                <p class='card-text'>".oci_result($query_Bague, 'PRIX')."€</p>
+                                                <div class='link_buttons'>
+                                                    <a href='?index.php&target=details_produits&ref=".oci_result($query_Bague, 'IDPRODUIT')."' class='btn details px-auto'>voir les détails</a><br />
+                                                    <button  class='btn cart px-auto' type='submit' name='submitProduit' >Ajouter au panier</a>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>

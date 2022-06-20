@@ -1,7 +1,8 @@
 <link href="./styles/s_commentaire_template.css" rel="stylesheet">
 
 
-<?php while ($commentaire = oci_fetch($query_commentaires)) { echo "
+<?php while ($commentaire = oci_fetch($query_commentaires)) { 
+        echo "
         <div class='be-comment'>
             <div class='be-img-comment'>	
                 <a href='blog-detail-2.html'>

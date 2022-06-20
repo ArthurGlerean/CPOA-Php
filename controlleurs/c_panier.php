@@ -10,7 +10,7 @@
         require_once("./modeles/m_produits.php");
         
         if(isset($_POST["panierSubmit"])){
-            require_once("./vues/v_paiement.php");
+            require_once("./controlleurs/c_paiement.php");
         }else{
             require_once("./vues/v_panier.php");
         }

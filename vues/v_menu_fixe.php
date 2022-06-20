@@ -10,7 +10,7 @@
                 <ul class="navlinks">
                     <li><a href="?index.php&target=home">Accueil</a></li>
                     <li><a href="?index.php&target=produits">Nos produits</a></li>
-                    <li><a href="?index.php&target=panier">Mon panier</a></li>
+                    <li><a href="?index.php&target=panier"><?php if($_SESSION["isConnected"] == 1){echo "Mon Panier";} ?></a></li>
                     <li><a href="?index.php&target=<?php if($_SESSION["isConnected"]== 1){echo "profil";}else{ echo "connexion&type=inscription"; } ?>">
                             <?php if($_SESSION["isConnected"]== 1){echo "Mon profil";}else{ echo "Me connecter"; } ?>
                         </a>

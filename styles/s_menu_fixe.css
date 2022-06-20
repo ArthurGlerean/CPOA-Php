@@ -8,8 +8,7 @@ body {
     font-size: 62.5%;
     font-size: 10px;
 }
-/*-- Inspiration taken from abdo steif -->
-/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
+
 
 /* Navbar section */
 .title{
@@ -129,7 +128,6 @@ a img{
         left: 0;
         bottom: 0;
         background-color: #111;
-        /*same background color of navbar*/
         background-position: center top;
     }
     .nav div.main_list ul li {
@@ -148,8 +146,7 @@ a img{
 }
 
 
-/* Animation */
-/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
 
 .navTrigger {
     cursor: pointer;

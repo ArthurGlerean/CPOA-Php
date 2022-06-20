@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+}
+main{
+    margin:auto;
+    align-items: center;
+    text-align: -webkit-center;
+}
+
+.title-commande{
+    font-size: 50px;
+    font-family:"Quicksand", sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.return{
+    text-decoration: none;
+    color:#000;
+}
+.return:hover{
+    color:#00E676;
+}
+hr{
+    margin-top:20px;
+    margin-bottom:20px;
+}

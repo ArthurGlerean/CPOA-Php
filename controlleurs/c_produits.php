@@ -3,7 +3,7 @@
     $all = 1;
     $montres = 0;
     $chaines = 0;
-    $gourmettes = 0;
+    $bracelets = 0;
     $bagues = 0;
     $erreur_ajout_panier="";
     include_once("./lib/connectDb.php");
@@ -24,9 +24,9 @@
             $all = 0;
             $chaines=1;
         }
-        if($_POST["select_categorie"] == "Gourmettes"){
+        if($_POST["select_categorie"] == "Bracelets"){
             $all = 0;
-            $gourmettes=1;
+            $bracelets=1;
         }
         if($_POST["select_categorie"] == "Bagues"){
             $all = 0;
